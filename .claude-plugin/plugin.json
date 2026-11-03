@@ -1,0 +1,6 @@
+{
+  "name": "session-panel",
+  "version": "0.1.0",
+  "description": "A side panel like the Claude Code app's: environment, context use, connectors, outputs and changes",
+  "types": "./types/index.d.ts"
+}
