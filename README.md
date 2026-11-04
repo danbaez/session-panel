@@ -1,6 +1,6 @@
 # session-panel
 
-A side panel for the Claude Code CLI laid out like the Claude Code desktop app's session panel. It shows:
+A side panel for the Claude Code CLI that brings the desktop app's session panel to the terminal. It shows:
 
 - **Environment**: machine, project and folder, git branch, and whether a Remote Control client is attached
 - **Context**: % used, used/total tokens, a coloured bar by category, and the `/context` rows (Messages, System tools, MCP tools, System prompt, Memory files, Skills, Autocompact buffer, Free space, deferred tools), with expandable MCP tools and Memory files lists
@@ -28,4 +28,16 @@ claude plugin install session-panel --marketplace danbaez/session-panel
 
 In the desktop app, where `/plugin` does not run: click + next to the prompt box, then Plugins, Add marketplace with `danbaez/session-panel`, then Add plugin.
 
-This repository is private: installing needs read access on GitHub and a git credential for github.com on your machine (an SSH key, or `gh auth login` then `gh auth setup-git`).
+## Uninstall
+
+```
+/plugin uninstall session-panel
+```
+
+## Contributing
+
+Issues and pull requests are welcome. The panel is a single module, `hooks/register.tsx`, with its data types in `types/index.d.ts` and a render test in `hooks/pane.test.tsx`.
+
+## License
+
+[MIT](LICENSE)
