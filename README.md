@@ -1,5 +1,7 @@
 # session-panel
 
+<img src="docs/screenshot.png" alt="The session panel docked in a Claude Code terminal session, showing the Environment, Context, Connectors and Outputs sections" width="350" align="right">
+
 A side panel for the Claude Code CLI that brings the desktop app's session panel to the terminal. It shows:
 
 - **Environment**: machine, project and folder, git branch, and whether a Remote Control client is attached
