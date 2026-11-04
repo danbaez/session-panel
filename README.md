@@ -1,6 +1,6 @@
 # session-panel
 
-<img src="docs/screenshot.png" alt="The session panel docked in a Claude Code terminal session, showing the Environment, Context, Connectors and Outputs sections" width="350" align="right">
+<img src="docs/demo.gif" alt="The session panel updating live in a Claude Code terminal session, showing the Environment, Context, Connectors and Outputs sections" width="308" align="right">
 
 A side panel for the Claude Code CLI that brings the desktop app's session panel to the terminal. It shows:
 
