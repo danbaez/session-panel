@@ -1,7 +1,5 @@
 # session-panel
 
-<img src="docs/demo.gif" alt="The session panel updating live in a Claude Code terminal session, showing the Environment, Context, Connectors and Outputs sections" width="308" align="right">
-
 A side panel for the Claude Code CLI that brings the desktop app's session panel to the terminal. It shows:
 
 - **Environment**: machine, project and folder, git branch, and whether a Remote Control client is attached
@@ -11,6 +9,10 @@ A side panel for the Claude Code CLI that brings the desktop app's session panel
 - **Changes**: lines added and removed against the main branch, with a **Create PR** button
 
 The panel docks beside the chat when the terminal is at least 144 columns wide; `/session-panel` opens it at any width. It refreshes after each reply and file edit, and has a Refresh button.
+
+<p align="center">
+  <img src="docs/demo.gif" alt="The session panel updating live in a Claude Code terminal session, showing the Environment, Context, Connectors and Outputs sections" width="308">
+</p>
 
 ## Install
 
