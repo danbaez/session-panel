@@ -1,7 +1,7 @@
 {
   "name": "session-panel",
   "version": "0.1.0",
-  "description": "A side panel like the Claude Code app's: environment, context use, connectors, outputs and changes",
+  "description": "A side panel like the Claude Code app's: environment, context, usage limits, MCP, outputs, changes and PR",
   "author": { "name": "Daniel Baez", "url": "https://github.com/danbaez" },
   "homepage": "https://github.com/danbaez/session-panel",
   "repository": "https://github.com/danbaez/session-panel",
