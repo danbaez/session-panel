@@ -2,16 +2,17 @@
 
 A side panel for the Claude Code CLI that brings the desktop app's session panel to the terminal. It shows:
 
-- **Environment**: machine, project and folder, git branch, and whether a Remote Control client is attached
-- **Context**: % used, used/total tokens, a coloured bar by category, and the `/context` rows (Messages, System tools, MCP tools, System prompt, Memory files, Skills, Autocompact buffer, Free space, deferred tools), with expandable MCP tools and Memory files lists
-- **Connectors**: the MCP servers whose tools are in context
-- **Outputs**: files created and artifacts published this session
-- **Changes**: lines added and removed against the main branch, with a **Create PR** button
+- **Environment**: machine, project and folder, git branch, model, and whether a Remote Control client is attached
+- **Context**: % used, used/total tokens, a coloured bar by category, and the `/context` rows (Messages, System tools, MCP tools, System prompt, Memory files, Skills, Autocompact buffer, Free space, deferred tools), with an expandable Memory files list
+- **Usage**: your 5-hour and weekly limits, each with a bar and when it resets, and the session's cost (shown when your plan reports them)
+- **MCP in context**: the MCP servers whose tools are loaded in context, with their tokens and tool counts (servers whose tools are all deferred are not listed)
+- **Outputs**: files written and artifacts published this session, newest first; files that existed before are marked updated
+- **Changes**: lines added and removed against the main branch (untracked files included), commits ahead and behind, uncommitted files, and the branch's pull request: **View PR** when one is open, **Create PR** when there is work to send
 
-The panel docks beside the chat when the terminal is at least 144 columns wide; `/session-panel` opens it at any width. It refreshes after each reply and file edit, and has a Refresh button.
+The panel docks beside the chat when the terminal is at least 144 columns wide; `/session-panel` opens it at any width. Context and usage refresh whenever Claude Code measures the session (after each reply, a compaction, or a limit moving); git refreshes after each file edit or shell command. The PR is looked up with `gh` at the start, on a new branch, after a command that runs `gh` or `git push`, and on Refresh.
 
 <p align="center">
-  <img src="docs/demo.gif" alt="The session panel updating live in a Claude Code terminal session, showing the Environment, Context, Connectors and Outputs sections" width="308">
+  <img src="docs/demo.gif" alt="The session panel updating as Claude works: context and the 5-hour limit rise, new files appear under Outputs, and Create PR becomes a View PR link once the pull request is open" width="340">
 </p>
 
 ## Install
