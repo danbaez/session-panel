@@ -1,5 +1,8 @@
 {
   "name": "session-panel",
   "owner": { "name": "Daniel Baez" },
+  "metadata": {
+    "description": "A side panel for the Claude Code CLI: environment, context, usage limits, MCP, outputs, changes and PR"
+  },
   "plugins": [{ "name": "session-panel", "source": "./" }]
 }
